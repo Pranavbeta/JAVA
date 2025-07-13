@@ -5,7 +5,7 @@ public class Binary_Search {
         int Start=0;
         int end=number.length-1;
         while (Start<=end) {
-            int mid=(Start+end)/2;
+            int mid=Start+(end-Start)/2;
             System.out.println(number[mid]);
             if(number[mid]==key){
                 return mid;
